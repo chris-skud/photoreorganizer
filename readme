@@ -1,0 +1,19 @@
+The purpose of this utility is to organize files (primarily images and videos) into a yyyy\mm based hierarchy.  It will first attempt to get EXIF based timestamps but fall back to filesystem timestamps to move the file into the appropriate directory.
+
+I've found it useful for merging files from two different sources (grandma's camera, my iphone, etc...).
+
+The resulting directory structure will look something like this:
+2002
+	01
+	02
+	03
+	04
+	...
+2003
+	01
+	02
+	03
+	...
+
+	
+tested on WindowsXP/7 and Python 2.7
