@@ -1,6 +1,4 @@
-The purpose of this utility is to organize files (primarily images and videos) into a yyyy\mm based hierarchy.  It will first attempt to get EXIF based timestamps but fall back to filesystem timestamps to move the file into the appropriate directory.
-
-I've found it useful for merging files from two different sources (grandma's camera, my iphone, etc...).
+The purpose of this utility is to organize files (primarily images and videos) into a yyyy\mm based hierarchy.  It will first attempt to get EXIF based timestamps but fall back to filesystem timestamps to move the file into the appropriate directory. I've found it useful for merging files from two different sources (grandma's camera, my iphone, etc...).
 
 The resulting directory structure will look something like this:
 2002
@@ -15,5 +13,11 @@ The resulting directory structure will look something like this:
 	03
 	...
 
+
+Usage:
+	Command line format is: photoreorganizer.py startDir [destDir]
+	Example: photoreorganizer.py "C:\Documents and Settings\chriss\My Documents\My Pictures" "C:\MyNewPhotosDir"
+	Leaving the second parameter blank will simply create the dest directories as sub directories of the start dir (a very common use case)
+	
 	
 tested on WindowsXP/7 and Python 2.7

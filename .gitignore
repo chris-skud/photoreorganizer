@@ -1,3 +1,5 @@
 $ cat .gitignore
 
 log/
+backlog.txt
+old_photoreorganizer.py
