@@ -11,7 +11,8 @@ def getDestDir(srcRoot, destRoot, year, month):
 	# a bit hacky but always make sure month is 2 digit 
 	if (len(month) == 1):
 		month = '0' + month
-	destDir = destRoot + '\\' + year + '\\' + month
+	
+	destDir = os.path.join(destRoot, year, month)
 	
 	if not os.path.isdir(destDir):
 		os.makedirs(destDir)
